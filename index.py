@@ -19,10 +19,8 @@ def index():
     homepage += "<a href=/random>隨機型謎語</a><br>"
     return homepage
 
-@app.route("/item")
+@app.route("/item",methods=["GET", "POST"])
 def item():
-
-    num = str(random.randint(1,10))
 
     result =""
 
