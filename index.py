@@ -34,6 +34,8 @@ def item():
             if keyword in dict["num"]:
                 result = format(dict["Question"])
 
+        if result == "":
+            result = "是怎樣?皮啊?給我重輸"
         return result
     else:
         return render_template("item.html")
